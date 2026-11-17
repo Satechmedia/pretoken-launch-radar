@@ -3,12 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Token Radar: pre-token protocols ranked by implied value</title>
+<title>Pre-token Launch Radar: tokenless protocols ranked by implied value</title>
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<a class="skip" href="#board">Skip to the board</a>
-<main id="board" tabindex="-1" aria-busy="true"></main>
+<header class="mast">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18"/><circle cx="20" cy="20" r="11"/><circle cx="20" cy="20" r="4"/><path d="M20 20 L34 8"/></svg>
+    <div>
+      <h1>Pre-token Launch Radar</h1>
+      <p id="lede">Protocols that record no token, ranked by what a token would be worth at today&rsquo;s record. Click a row for its value breakdown and costed farm plan.</p>
+    </div>
+  </div>
+  <dl class="tiles" id="tiles"></dl>
+</header>
+<nav class="tabs" id="tabs" aria-label="Sections">
+  <button data-tab="board">Pre-token board</button>
+  <button data-tab="trading">Already trading</button>
+  <button data-tab="method">Method</button>
+</nav>
+<main id="main" tabindex="-1"></main>
+<footer class="foot">An implied value is this model&rsquo;s estimate from one DefiLlama snapshot, not a forecast and not advice. DefiLlama&rsquo;s record is not proof: a protocol here records no token, which is not the same as having none. No plan on this page promises a token, points or an airdrop.</footer>
+<noscript>This page needs JavaScript to draw the board from data.js.</noscript>
 <script src="../data.js"></script>
 <script src="app.js"></script>
 </body>
